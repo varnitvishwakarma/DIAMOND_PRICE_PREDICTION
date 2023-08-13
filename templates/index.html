@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>DIAMOND PRICE PREDICTION</title>
+
+<style>
+    body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.centered-h1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 5em;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 10%; /* Adjust this value to change the distance from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 23px;
+  background-color: #3f4347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+</style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="https://images.unsplash.com/photo-1599707367072-cd6ada2bc375?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1333&q=80" alt="Background Image">
+    <h1 class="centered-h1">DIAMOND PRICE PREDICTION</h1>
+    <div class="button-container">
+      <button id="goToSecondPage">NEXT</button>
+    </div>
+    <script>
+      const goToSecondPageButton = document.getElementById('goToSecondPage');
+  
+      goToSecondPageButton.addEventListener('click', () => {
+        window.location.href = 'predict';
+      });
+    </script>
+  </div>
+</body>
+</html>
