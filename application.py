@@ -34,7 +34,7 @@ def predict_datapoint():
 
         results=round(pred[0],2)
 
-        return render_template('foam.html',final_result=results)
+        return render_template('foam.html',final_result=results*80)
         
     
 
